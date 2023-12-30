@@ -34,7 +34,7 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
             {
                 
-                // IMPLEMENTADO!!!
+                // IMPLEMENTADO
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
                 int horas = Convert.ToInt32(Console.ReadLine());
                 decimal valorTotal = 0; 
@@ -42,7 +42,7 @@ namespace DesafioFundamentos.Models
                 valorTotal = precoInicial + (precoPorHora * horas);
 
                 
-                // IMPLEMENTADO!!!
+                // IMPLEMENTADO
                 veiculos.Remove(placa);
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
